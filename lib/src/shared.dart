@@ -7,3 +7,4 @@ const asyncImportPrefix = r'$async';
 const coreImportPrefix = r'$core';
 const grpcImportPrefix = r'$grpc';
 const mixinImportPrefix = r'$mixin';
+const convertImportPrefix = r'$convert';
