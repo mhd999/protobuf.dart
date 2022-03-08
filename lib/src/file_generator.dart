@@ -310,6 +310,7 @@ class FileGenerator extends ProtobufContainer {
     }
 
     out.println(_coreImport);
+    out.println(_convertImport);
     out.println();
 
     if (_needsFixnumImport) {
