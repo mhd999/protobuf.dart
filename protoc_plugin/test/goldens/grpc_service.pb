@@ -6,6 +6,7 @@
 // ignore_for_file: annotate_overrides,camel_case_types,constant_identifier_names,directives_ordering,library_prefixes,non_constant_identifier_names,prefer_final_fields,return_of_invalid_type,unnecessary_const,unnecessary_import,unnecessary_this,unused_import,unused_shown_name
 
 import 'dart:core' as $core;
+import 'dart:convert' as $convert;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
@@ -18,6 +19,7 @@ class Empty extends $pb.GeneratedMessage {
   factory Empty() => create();
   factory Empty.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory Empty.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Empty.fromJSON($core.String json) => Empty.create()..mergeFromProto3Json($convert.jsonDecode(json));
   @$core.Deprecated(
   'Using this can add significant overhead to your binary. '
   'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
