@@ -417,7 +417,6 @@ class FileGenerator extends ProtobufContainer {
       // with enums that have the same name.
       out.println('// ignore_for_file: UNDEFINED_SHOWN_NAME');
       out.println(_coreImport);
-      out.println(_convertImport);
       out.println(_protobufImport);
       out.println();
     }
